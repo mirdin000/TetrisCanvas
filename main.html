@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Tetrium</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+  
+    <div class="main">
+
+    </div>
+
+    <canvas id="canvas1" width="320" height="210" style="position: absolute; left: 20px; top: 50px; background-color:brown;"></canvas>
+    <canvas id="canvas2" width="320" height="150" style="position: absolute; left: 20px; top: 280px; background-color:brown;"></canvas>
+    <canvas id="canvas3" width="320" height="320" style="position: absolute; left: 20px; bottom: 50px; background-color:brown;"></canvas>
+
+    <script src="sol1.js"></script>
+    <script>
+    let canvas = document.getElementById("canvas1");
+    let ctx = canvas.getContext('2d');
+
+    ctx.fillStyle = 'yellow';
+    ctx.font = "italic 30pt Arial";
+    ctx.fillText("Управление", 40, 40);
+    ctx.font = "italic 10pt Arial";
+    ctx.fillText("Влево - стрелка влево", 25, 60);
+    ctx.fillText("Вправо - стрелка вправо", 25, 80);
+    ctx.fillText("Ускорить падение - стрелка вниз", 25, 100);
+    ctx.fillText("Поворот фигуры - стрелка вверх", 25, 120);
+
+    ctx.font = "italic 30pt Arial";
+    ctx.fillText("Правила", 65, 170);
+    ctx.font = "italic 10pt Arial";
+    ctx.fillText("Скорость увеличивается каждые 20 очков", 25, 190);
+    </script>
+    
+</body>
+</html>
